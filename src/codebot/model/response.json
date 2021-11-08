@@ -1,0 +1,129 @@
+{
+    "greeting":[
+        ["$self chào $opp", "$opp có thắc mắc gì về $topic ạ?"],
+        ["$self chào $opp", "$opp có câu hỏi gì về $topic ạ?"],
+        ["$self chào $opp", "hãy đặt câu hỏi cho $self về $topic ạ!"],
+        ["$self chào $opp", "$self sẵn sàng giải đáp thắc mắc cho $opp về $topic ạ!"]
+    ],
+    "credit_info": [
+        [
+            "CodEbot là một hệ thống chatbot sử dụng ngôn ngữ Tiếng Việt để giải đáp thắc mắc trong lập trình C++ và Python 3 cơ bản.", 
+            "CodEbot được phát triển bởi nhóm tác giả là Vương Lê Minh Nguyên và Lương Công Tâm dưới sự hướng dẫn của Tiến sĩ Nguyễn Viết Hưng.", 
+            "Vào thời điểm xây dựng CodEbot, các tác giả đang là sinh viên năm 3 ngành Khoa học Máy tính của trường Đại học Sư Phạm TP.HCM."
+        ]
+    ],
+    "other": [
+        "$self không hiểu $opp đang nói gì cả. $recommend",
+        "$self không rõ $opp đang thắc mắc điều gì. $recommend",
+        "Hình như bạn đang nói chuyện không liên quan đến lập trình! $recommend"
+    ],
+    "agree": [
+        "Cảm ơn $opp."
+    ],
+    "disagree": [
+        "Xin lỗi $opp. $recommend"
+    ],
+    "help": {
+        "general": [
+            "Không biết $self có thể giúp gì được cho $opp?"
+        ],
+        "cpp": [
+            "$opp có thắc mắc gì về C++ ạ?"
+        ],
+        "py": [
+            "$opp có thắc mắc gì về Python ạ?"
+        ]
+    },
+    "tip": {
+        "general": [
+            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
+        ],
+        "cpp": [
+            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
+        ],
+        "py": [
+            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
+        ]
+    },
+    "references": {
+        "general": [
+            ["Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein", 
+             "Code Complete: A Practical Handbook of Software Construction by Steve McConnell",
+             "Code Simplicity: The Fundamentals of Software by Max Kanat-Alexander",
+             "Clean Code: A Handbook of AGILE Software Craftmanship by Robert C. Martin"]
+        ],
+        "cpp": [
+            ["The C++ Programming Language by Bjarne Stroustrup", "Programming: Principles and Practice Using C++ by Bjarne Stroustrup", "A Tour of C++ by Bjarne Stroustrup"]
+        ],
+        "py": [
+            ["Python Cookbook: Recipes for Mastering Python 3 by Brian K. Jones and David M. Beazley", "Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code by Zed Shaw"]
+        ]
+    },
+    "define": {
+        "general": [
+            "Sau đây là định nghĩa của $obj mà bạn đang tìm"
+        ],
+        "cpp": [
+            "Trong ngôn ngữ C++, sau đây là định nghĩa của $obj mà bạn đang tìm"
+        ],
+        "py": [
+            "Trong ngôn ngữ Python, sau đây là định nghĩa của $obj mà bạn đang tìm"
+        ],
+        "null": [
+            "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
+        ]
+    },
+    "apply": {
+        "general": [
+            "Sau đây là ứng dụng của $obj mà bạn đang tìm"
+        ],
+        "cpp": [
+            "Trong ngôn ngữ C++, sau đây là ứng dụng của $obj mà bạn đang tìm"
+        ],
+        "py": [
+            "Trong ngôn ngữ Python, sau đây là ứng dụng của $obj mà bạn đang tìm"
+        ],
+        "null": [
+            "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
+        ]
+    },
+    "compare": {
+        "general": [
+            "Sau đây là sự so sánh giữa $obj và $obj."
+        ],
+        "cpp": [
+            "Trong C++, sau đây là sự so sánh giữa $obj và $obj."
+        ],
+        "py": [
+            "Trong Python, sau đây là sự so sánh giữa $obj và $obj."
+        ],
+        "null": [
+            "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
+        ]
+    },
+    "low_conf": {
+        "greeting": "Có phải $opp đang muốn gửi lời chào với $self?",
+        "credit_info": "Có phải $opp đang muốn biết thêm về $self?",
+        "tip": "Có phải $opp muốn biết thêm về mẹo lập trình?",
+        "references": "Có phải $opp đang muốn xin thêm tài liệu lập trình?",
+        "help": "Có phải $opp đang cần giúp đỡ?",
+        "define": "Có phải $opp đang cần $self trả lời câu hỏi định nghĩa không?",
+        "compare": "Có phải $opp đang cần $self trả lời câu hỏi so sánh không?",
+        "apply": "Có phải $opp đang cần $self trả lời câu hỏi ứng dụng không?"
+    },
+    "$self": [
+        "CodEbot"
+    ],
+    "$opp": [
+        "bạn"
+    ],
+    "$topic": [
+        "lập trình C++ hay Python 3 cơ bản",
+        "lập trình cơ bản với C++ hoặc Python 3"
+    ],
+    "$recommend": [
+        "Hãy đặt một câu hỏi khác liên quan đến $topic ạ!",
+        "Hãy đặt một câu hỏi khác. Nhớ là liên quan đến $topic nhé!",
+        "Vui lòng đặt một câu hỏi khác liên quan đến $topic đi $opp."
+    ]
+}
