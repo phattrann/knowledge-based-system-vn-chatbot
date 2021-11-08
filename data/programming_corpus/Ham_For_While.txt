@@ -1,0 +1,74 @@
+Định nghĩa Hàm
+Một hàm là một nhóm các câu lệnh cùng nhau thực hiện một nhiệm vụ. Mỗi chương trình C++ có ít nhất một hàm, là hàm main(). Bạn có thể chia mã của bạn thành các hàm riêng biệt. Cách bạn phân chia mã của bạn giữa các hàm khác nhau tùy thuộc vào bạn, nhưng về mặt logic mỗi hàm thực hiện một tác vụ cụ thể.
+
+Ưu điểm
+Tái sử dụng
+Bằng cách tạo các hàm trong C++, bạn có thể gọi nó nhiều lần. Vì vậy, bạn không cần phải viết cùng một mã một hoặc nhiều lần nữa.
+Tối ưu hóa mã
+Giả sử, bạn phải kiểm tra 3 số (531, 883 và 781) có phải là số nguyên tố hay không. Không sử dụng hàm, bạn cần viết logic số nguyên tố 3 lần. Vì vậy, có sự lặp lại của mã. Nhưng nếu bạn sử dụng các hàm, bạn chỉ cần viết logic một lần và bạn có thể sử dụng lại nó nhiều lần.
+
+Thành phần của Hàm
+Hàm trong lập trình C++ bao gồm tên hàm và phần thân hàm. Dưới đây là tất cả các phần của hàm:
+Kiểu trả về: Một hàm có thể trả về một giá trị. Các return_type là kiểu dữ liệu của giá trị hàm trả về. Một số hàm thực hiện các hoạt động mong muốn mà không trả về một giá trị. Trong trường hợp này, return_type là từ khóa void.
+Tên hàm: Đây là tên thực của hàm.
+Tham số: Một tham số giống như một trình giữ chỗ. Khi một hàm được gọi, bạn chuyển một giá trị cho tham số. Giá trị này được gọi là tham số hoặc đối số thực tế. Danh sách tham số tham chiếu đến loại, thứ tự và số tham số của hàm. Các tham số là tùy chọn; có nghĩa là, một hàm có thể không chứa tham số.
+Thân hàm: Phần thân hàm chứa một tập hợp các câu lệnh xác định chức năng của hàm.
+
+Ví dụ về Hàm trong C++
+Ví dụ dưới đây là mã nguồn cho một hàm được gọi là max(). Hàm này truyền vào hai tham số num1 và num2 và trả về giá trị lớn nhất giữa hai tham số:
+/* hàm trả về giá trị lớn nhất giữa 2 số */
+int max(int num1, int num2) {
+ 
+   /* khai báo biến local */
+   int result;
+  
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+  
+   return result; 
+}
+
+Khai báo Hàm
+Một khai báo hàm cho trình biên dịch biết về tên hàm và cách gọi hàm. Cơ thể thực tế của hàm có thể được định nghĩa riêng.
+Một khai báo hàm có các phần sau:
+return_type function_name(parameter list);
+Ví dụ đối với hàm max(), khai báo hàm như sau:
+int max(int num1, int num2);
+
+Gọi Hàm
+Để sử dụng một hàm, bạn sẽ phải gọi hàm đó để thực hiện tác vụ được xác định.
+Để gọi một hàm, bạn chỉ cần chuyển các tham số bắt buộc cùng với tên hàm và nếu hàm trả về một giá trị, thì bạn có thể lưu trữ giá trị trả về. Ví dụ:
+int a,b,c;
+c = max(a, b);
+
+Định nghĩa vòng lặp For trong C++
+Vòng lặp For trong C++ là một cấu trúc điểu khiển lặp được sử dụng để thực thi số lần lặp cụ thể.
+
+Cú pháp vòng lặp for
+for (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  
+    // Khối lệnh được thực thi
+}
+
+Ví dụ vòng lặp for
+for (int a = 10; a < 20; a++) {
+    cout << "Gia tri cua a: " << a << endl;
+}
+
+Định nghĩa vòng lặp while trong C++
+Vòng lặp while trong C++ được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này.
+
+Cú pháp vòng lặp while
+while(condition) {
+    // Khối lệnh được lặp lại cho đến khi condition = False
+}
+trong đó, condition có thể là bất kỳ biểu thức nào. Khối lệnh trong vòng lặp while được thực thi trong khi condition là true. Khi condition là false thì điều khiển chương trình sẽ chuyển đến dòng ngay sau vòng lặp.
+Ở đây, điểm mấu chốt cần lưu ý là vòng lặp while có thể không thực thi được. Khi điều kiện là false, khối lệnh bên trong vòng lặp sẽ bị bỏ qua và câu lệnh đầu tiên sau vòng lặp while sẽ được thực thi.
+
+Ví dụ vòng lặp while
+int a = 10;
+while( a < 20 ) {
+   cout << "Gia tri cua a: " << a << endl;
+   a++;
+}

@@ -1,0 +1,71 @@
+Khi cần lưu trữ một dãy n phần tử dữ liệu chúng ta cần khai báo n biến tương ứng với n tên gọi khác nhau. Điều này sẽ rất khó khăn cho người lập trình để có thể nhớ và quản lý hết được tất cả các biến, đặc biệt khi n lớn. Khi đó, ta cần dùng đến mảng. 
+Định nghĩa Mảng
+Mảng là một dãy các thành phần có cùng kiểu được sắp kề nhau liên tục trong bộ nhớ. Tất cả các thành phần đều có cùng tên là tên của mảng. Để phân biệt các thành phần với nhau, các thành phần sẽ được đánh số thứ tự từ 0 cho đến hết mảng.
+
+Cú pháp khởi tại Mảng 1 chiều
+<tên kiểu> <tên mảng>[số thành phần] ; // không khởi tạo VD: float a[3];
+<tên kiểu> <tên mảng>[số thành phần] = { dãy giá trị } ; // có khởi tạo VD: int a[2] = {1, 3} ,
+<tên kiểu> <tên mảng>[ ] = { dãy giá trị } ; // có khởi tạo VD: double Data[] = { 0,0,0,0,0 };
+
+Cú pháp khởi tại Mảng 2 chiều
+<tên kiểu> <tên mảng>[số dòng][số cột] ; // không khởi tạo VD: int a[3][4]; 
+
+Tuy mỗi mảng biểu diễn một đối tượng nhưng chúng ta không thể áp dụng các thao tác lên toàn bộ mảng mà phải thực hiện thao tác thông qua từng thành phần của mảng. Ví dụ chúng ta không thể nhập dữ liệu cho mảng a[10] bằng câu lệnh: cin >> a ; // sai ,  mà phải nhập cho từng phần tử từ a[0] đến a[9] của a. 
+Để nhập mảng 1 chiều, ta sử dụng cú pháp sau:
+int i ;
+for (i = 0 ; i < 10 ; i++) cin >> a[i] ; 
+Để xuất mảng 1 chiều, ta sử dụng cú pháp sau:
+int i ;
+for (i = 0 ; i < 10 ; i++) cout << a[i] ; 
+
+Để chỉ thành phần thứ i (hay chỉ số i) của một mảng 1 chiều ta viết tên mảng kèm theo chỉ số trong cặp ngoặc vuông []. VD: a[5];
+
+Để chỉ thành phần dòng i cột j của một mảng 2 chiều ta viết tên mảng kèm theo các chỉ số trong cặp ngoặc vuông [dòng][cột]. VD: a[3][4];
+
+Định nghĩa kí tự (char)
+Một kí tự là một kí hiệu trong bảng mã ASCII. Như đã biết một số kí tự có mặt chữ trên bàn phím (ví dụ các chữ cái, chữ số) trong khi một số kí tự lại không (ví dụ kí tự biểu diễn việc lùi lại một ô trong văn bản, kí tự chỉ việc kết thúc một dòng hay kết thúc một văn bản). Do vậy để biểu diễn một kí tự người ta dùng chính mã ASCII của kí tự đó trong bảng mã ASCII và thường gọi là giá trị của kí tự.
+VD: 65 là mã ASCII của kí tự 'A', 13 là mã ASCII của kí tự xuống dòng.
+
+Một số kí tự hằng đặc biệt:
+'\n' : biểu thị kí tự xuống dòng (cũng tương đương với endl)
+'\t' : kí tự tab
+'\a' : kí tự chuông (tức thay vì in kí tự, loa sẽ phát ra một tiếng 'bíp')
+'\r' : xuống dòng
+'\f' : kéo trang
+'\\' : dấu \
+'\?' : dấu chấm hỏi ?
+'\'' : dấu nháy đơn '
+'\"' : dấu nháy kép "
+
+Định nghĩa chuỗi (string)
+Chuỗi là đối tượng đại diện cho chuỗi các ký tự (mảng các ký tự).
+
+Một số hàm xử lý chuỗi (string):
+strcpy(s, t); // Hàm sẽ sao chép toàn bộ nội dung của chuỗi t (kể cả kí tự kết thúc chuỗi) vào cho chuỗi s.
+Lưu ý: Để sử dụng hàm này cần đảm bảo độ dài của mảng s ít nhất cũng bằng độ dài của mảng t.
+
+strncpy(s, t, n); // Sao chép n kí tự của t vào s. Hàm này chỉ làm nhiệm vụ sao chép, không tự động gắn kí tự kết thúc xâu cho s. Do vậy NSD phải thêm câu lệnh đặt kí tự '\0' vào cuối chuỗi s sau khi sao chép xong.
+Ví dụ:
+string s, t = "Steven";
+
+strncpy(s, t, 5) ; // copy 5 kí tự "Steve" vào s
+s[5] = '\0' ; // đặt dấu kết thúc chuỗi 
+cout << s << " is young brother of " << t ; // in câu: Steve is young brother of Steven
+
+strlen(s) ; // Hàm trả giá trị là độ dài của chuỗi s.
+
+Để khai báo ra một kiểu cấu trúc, cần phải khai báo tên của kiểu (là một tên gọi tự đặt), tên cùng với các thành phần dữ liệu có trong kiểu cấu trúc này. Một kiểu cấu trúc được khai báo theo mẫu sau:
+struct <tên kiểu> {
+	 <danh sách biến>; //các thành phần
+};
+Ví dụ:
+struct PHANSO {
+	int tu;
+	int mau;
+}; /* khi đó ta có thê sử dụng kiểu cấu trúc PHANSO như là một kiểu bình thường*/  PHANSO ps; 
+
+Để truy nhập vào các thành phần kiểu cấu trúc (struct) ta sử dụng cú pháp: tên_biến_cấu_trúc.tên_thành_phần.
+Ví dụ, với cấu trúc PHANSO được khai báo, ta có thể nhập và xuất các trường của biến ps có kiểu cấu trúc PHANSO như sau:
+PHANSO ps;
+cin>>ps.tu>>ps.mau;
+cout<<ps.tu<<”/”<<ps.mau; 
