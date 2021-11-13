@@ -258,8 +258,12 @@ class codebot:
 
         if self.intent == 'other':
             self.context = 'general'
-        
-        print(json.dumps(answers, ensure_ascii=False))
+
+        a = " ".join(answers)
+        # return json.dumps(, ensure_ascii=False)
+        return a
+
+from flask import Flask, render_template, request
 
 if __name__ == "__main__":
     try:
@@ -269,8 +273,18 @@ if __name__ == "__main__":
 
         bot_instance = codebot()
         # print("[\"<strong>CodEbot</strong> xin chào bạn 😁<br>Bạn có cần mình giúp gì không 😙😙\"]")
-        while True:
-            bot_instance.send_replies(input())
+        
+        app = Flask(__name__, template_folder='../../template')
+        app.static_folder = '../../static'
+        @app.route("/")
+        def home():
+            return render_template("index.html")
+        @app.route("/get")
+        def get_bot_response():
+            userText = request.args.get('msg')
+            return bot_instance.send_replies(userText)
+        if __name__ == "__main__":
+            app.run()
         
     except Exception as ex:
         print("An error has occured! Here is the error details:")

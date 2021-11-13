@@ -1,4 +1,0 @@
-{
-  "verbose": false,
-  "ignore": ["*.json", "./src/client/*", "./public"]
-}
