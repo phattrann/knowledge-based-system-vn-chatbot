@@ -1,0 +1,11 @@
+click==7.1.2
+Flask==2.0.1
+joblib==1.0.1
+nltk==3.6.1
+pandas==1.2.4
+regex==2021.4.4
+scikit-learn==1.0.1
+sklearn==0.0
+sklearn-crfsuite==0.3.6
+underthesea==1.2.3
+urllib3==1.26.4
