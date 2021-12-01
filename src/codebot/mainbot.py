@@ -266,33 +266,33 @@ class codebot:
 from flask import Flask, render_template, request
 
 if __name__ == "__main__":
-    try:
+    # try:
         # Set terminal encoding to utf-8
-        sys.stdin.reconfigure(encoding='utf-8')
-        sys.stdout.reconfigure(encoding='utf-8')
+    sys.stdin.reconfigure(encoding='utf-8')
+    sys.stdout.reconfigure(encoding='utf-8')
 
-        bot_instance = codebot()
-        # print("[\"<strong>CodEbot</strong> xin chào bạn 😁<br>Bạn có cần mình giúp gì không 😙😙\"]")
+    bot_instance = codebot()
+    # print("[\"<strong>CodEbot</strong> xin chào bạn 😁<br>Bạn có cần mình giúp gì không 😙😙\"]")
+    
+    app = Flask(__name__, template_folder='../../template')
+    app.static_folder = '../../static'
+    @app.route("/")
+    def home():
+        return render_template("index.html")
+    @app.route("/get")
+    def get_bot_response():
+        userText = request.args.get('msg')
+        return bot_instance.send_replies(userText)
+    if __name__ == "__main__":
+        app.run()
         
-        app = Flask(__name__, template_folder='../../template')
-        app.static_folder = '../../static'
-        @app.route("/")
-        def home():
-            return render_template("index.html")
-        @app.route("/get")
-        def get_bot_response():
-            userText = request.args.get('msg')
-            return bot_instance.send_replies(userText)
-        if __name__ == "__main__":
-            app.run()
-        
-    except Exception as ex:
-        print("An error has occured! Here is the error details:")
-        try:
-            print(bot_instance.intent, bot_instance.context)
-            traceback.print_tb(ex.__traceback__, file=sys.stdout)
-            print(ex)
-        except Exception as another_ex:
-            print("Another error has occured::", another_ex)
-    finally:
-        pass
+    # except Exception as ex:
+    #     print("An error has occured! Here is the error details:")
+    #     try:
+    #         print(bot_instance.intent, bot_instance.context)
+    #         traceback.print_tb(ex.__traceback__, file=sys.stdout)
+    #         print(ex)
+    #     except Exception as another_ex:
+    #         print("Another error has occured::", another_ex)
+    # finally:
+    #     pass
