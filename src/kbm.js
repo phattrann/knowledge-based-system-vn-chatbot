@@ -2,7 +2,7 @@ const fs = require("fs");
 
 class KBM {
   constructor (filepath) {
-    this.filepath = filepath;
+    this.filepath = "C:\Users\You\LHK's_Files\Study\Knowledge-Base\data\programming_corpus\cpp.txt";
     this.data = {};
     this.fd = null;
   }
