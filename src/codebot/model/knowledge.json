@@ -7,14 +7,6 @@
             "__source__": ["https://vi.wikipedia.org/wiki/C++"]
         }
     },
-    "python": {
-        "general": {
-            "define": ["Python là một ngôn ngữ lập trình bậc cao cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình. Cấu trúc của Python còn cho phép người sử dụng viết mã lệnh với số lần gõ phím tối thiểu."],
-            "apply": ["Python được ứng dụng phát triển nhanh các phần mềm, xây dựng web, làm việc với số liệu khoa học, và được sử dụng để giảng dạy lập trình ở nhiều nơi,..."],
-            "compare": ["Python là ngôn ngữ lập trình bậc cao thuộc dạng ngôn ngữ thông dịch, cần một trình thông dịch để thực thi mã nguồn. Python là ngôn ngữ đa mục đích, có tự động kiểu và tự động quản lý cấp phát bộ nhớ. Python được ứng dụng phát triển nhanh các phần mềm, xây dựng web, làm việc với số liệu khoa học, và được sử dụng để giảng dạy lập trình ở nhiều nơi,... "],
-            "__source__": ["https://vi.wikipedia.org/wiki/Python_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)", "https://www.python.org/about/apps/"]
-        }
-    },
     "hàm": {
         "general": {
             "define": ["Trong khoa học máy tính, một chương trình con (subprogram) hay subroutine là một đoạn chương trình được đóng gói thành một đơn vị trình, nó thực hiện một số tác vụ cụ thể mà chương trình cần thực hiện nhiều lần từ nhiều nơi trong thời gian chạy của nó. Khi chương trình cần đến tác vụ cụ thể đó thì bố trí chỉ thị gọi (call) đến chương trình con này và nhận kết quả nếu có sau khi nó thực thi xong. Ngay từ lúc máy tính ra đời thì kỹ thuật lập trình kiểu cấu trúc module hóa với các chương trình con đã được thiết lập, và được củng cố trong các phần mềm lập trình hợp ngữ. Ngày nay trong ngôn ngữ bậc cao chương trình con được diễn đạt tùy theo ngôn ngữ là các hàm (function), thủ tục (procedure) và phương thức (method),... Một số ngôn ngữ lập trình, chẳng hạn Pascal và FORTRAN, phân biệt giữa hàm (một chương trình con có trả về giá trị) và thủ tục (không trả về giá trị). Các ngôn ngữ khác, ví dụ C và LISP, coi hai thuật ngữ này như nhau. Cái tên phương thức thường được dùng trong lập trình hướng đối tượng để gọi các chương trình con là một phần của các đối tượng."],
@@ -25,9 +17,13 @@
         "cpp": {
             "define": ["Cách sử dụng hàm trong C++: abcxyz"],
             "__source__": []
-        },
-        "py": {
-            "define": ["Cách sử dụng hàm trong Python: abcxyz"],
+        }
+    },
+    "string": {
+        "general": {
+            "define": ["string là string"],
+            "apply": ["C++ được thiết kế hướng tới lập trình hệ thống và phần mềm nhúng"],
+            "compare": ["so sánh string"],
             "__source__": []
         }
     },

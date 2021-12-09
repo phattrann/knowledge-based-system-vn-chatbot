@@ -48,11 +48,11 @@ class codebot:
 
     def __load_models(self):
         # Preprocessing Model:
-        self.preprocessor = joblib.load(f'{self.__path}/model/preprocessing.bin')
+        self.preprocessor = joblib.load(f'{self.__path}/model/preprocessing_1.bin')
 
         # Linear Support Vector Classifiers:
-        self.intent_clf = joblib.load(f'{self.__path}/model/model_intent.bin')
-        self.context_clf = joblib.load(f'{self.__path}/model/model_context.bin')
+        self.intent_clf = joblib.load(f'{self.__path}/model/model_intent_1.bin')
+        self.context_clf = joblib.load(f'{self.__path}/model/model_context_1.bin')
     
     def __read_input(self, input_str):
         self.raw_stack.append(input_str)
