@@ -21,9 +21,13 @@
     },
     "string": {
         "general": {
-            "define": ["string là string"],
-            "apply": ["C++ được thiết kế hướng tới lập trình hệ thống và phần mềm nhúng"],
-            "compare": ["so sánh string"],
+            "define": ["Chuỗi là đối tượng đại diện cho chuỗi các ký tự (mảng các ký tự)."],
+            "apply": ["strcpy(s, t); // Hàm sẽ sao chép toàn bộ nội dung của chuỗi t (kể cả kí tự kết thúc chuỗi) vào cho chuỗi s. \n Lưu ý: Để sử dụng hàm này cần đảm bảo độ dài của mảng s ít nhất cũng bằng độ dài của mảng t."],
+            "compare": ["Chuỗi là đối tượng đại diện cho chuỗi các ký tự (mảng các ký tự)."],
+            "__source__": []
+        },
+        "cpp": {
+            "define": ["Cách sử dụng string trong C++: abcxyz"],
             "__source__": []
         }
     },

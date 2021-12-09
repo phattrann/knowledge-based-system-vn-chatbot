@@ -124,10 +124,10 @@ class codebot:
         response = choice(rb_intent[self.context])
         knowledge = []
 
-        # print(tokens)
-        # print(self.intent)
-        # print(theory_terms)
-        # print(self.context)
+        print("tokens",tokens)
+        print("intent",self.intent)
+        print("theory",theory_terms)
+        print("context",self.context)
 
         if len(theory_terms) < response.count('$obj'):
             self.intent = 'other'
