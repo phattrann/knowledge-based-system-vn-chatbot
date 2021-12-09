@@ -38,5 +38,37 @@
             "compare": ["Biến là một vị trí lưu trữ gắn liền với một tên tượng trưng (định danh), chứa đựng một lượng thông tin gọi là giá trị của biến."],
             "__source__": ["https://vi.wikipedia.org/wiki/Bi%E1%BA%BFn_(khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh)"]
         }
+    },
+    "if": {
+        "general": {
+            "define": ["Trong lập trình máy tính, chúng tôi sử dụng câu lệnh if để chạy mã khối chỉ khi một điều kiện nhất định được đáp ứng."],
+            "apply": ["Cú pháp: \n if(biểu thức logic){//khối lệnh}"],
+            "compare": ["Trong lập trình máy tính, chúng tôi sử dụng câu lệnh if để chạy mã khối chỉ khi một điều kiện nhất định được đáp ứng."],
+            "__source__": ["https://cafedev.vn/tu-hoc-c-cau-lenh-if-trong-c/"]
+        }
+    },
+    "if_else": {
+        "general": {
+            "define": ["Mệnh đề if-else trong C++ được sử dụng để kiểm tra một biểu thức điều kiện nào đó có đúng hay không, nếu đúng thì thực thi những câu lệnh bên trong khối lệnh if và ngược lại nếu sai thì nó sẽ bỏ qua những câu lệnh đó. Có ba dạng của câu lệnh if trong C++."],
+            "apply": ["Cú pháp: \n if(biểu thức logic){//khối lệnh }\n else{//khối lệnh }"],
+            "compare": ["Mệnh đề if-else trong C++ được sử dụng để kiểm tra một biểu thức điều kiện nào đó có đúng hay không, nếu đúng thì thực thi những câu lệnh bên trong khối lệnh if và ngược lại nếu sai thì nó sẽ bỏ qua những câu lệnh đó. Có ba dạng của câu lệnh if trong C++."],
+            "__source__": ["https://viettuts.vn/lap-trinh-cpp/menh-de-if-else-trong-cpp"]
+        }
+    },
+    "boolean": {
+        "general": {
+            "define": ["Kiểu bool là kiểu thể hiện giá trị đúng sai"],
+            "apply": ["&& là AND (và)\n || là OR (hoặc) \n ! là NOT (phủ định)"],
+            "compare": ["Kiểu bool là kiểu thể hiện giá trị đúng sai"],
+            "__source__": ["Giáo trình C++"]
+        }
+    },
+    "toán tử": {
+        "general": {
+            "define": ["Một toán tử là một biểu tượng, mà nó cho compiler thực hiện các thao tác toán học và logic cụ thể. C++ cung cấp nhiều toán tử có sẵn, đó là:\n +, cộng, a + b \n -, trừ, a - b \n *, nhân, a * b \n /, chia, a / b \n %, chia lấy phần dư, a % b \n >, so sánh lớn, a > b \n <, so sánh nhỏ, a < b \n <=, nhỏ hơn hoặc bằng, a <= b \n >=, lớn hơn hoặc bằng, a >= b \n !=, so sánh khác, a != b \n ==, so sánh bằng, a == b \n =, gán, a = b \n +=, viết tắt của lệnh a = a + b, a += b \n -=, viết tắt của lệnh a = a - b, a -= b \n *=, viết tắt của lệnh a = a * b, a *= b \n /=, viết tắt của lệnh a = a / b, a /= b \n %=, viết tắt của lệnh a = a % b, a %= b \n ++, viết tắt của lệnh a = a + 1, a++ (++a) \n --, viết tắt của lệnh a = a - 1, a-- (--a)"],
+            "apply": ["int a = 5, b = 10; \n int tong = 0; \n tong = a+b; \n hieu = a-b; \n tich = a*b; \n chialaydu = a%b;"],
+            "compare": [""],
+            "__source__": ["Giáo trình C++"]
+        }
     }
 }
