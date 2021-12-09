@@ -70,5 +70,29 @@
             "compare": [""],
             "__source__": ["Giáo trình C++"]
         }
+    },
+    "struct": {
+        "general": {
+            "define": ["Trong ngôn ngữ lập trình C++, các lớp và cấu trúc (struct) là các bản thiết kế được sử dụng để tạo ra thể hiện của một lớp.\n Struct trong C++ là một tập hợp các loại dữ liệu khác nhau. Nó tương tự như lớp chứa các loại dữ liệu khác nhau."],
+            "apply": ["Để khai báo ra một kiểu cấu trúc, cần phải khai báo tên của kiểu (là một tên gọi tự đặt), tên cùng với các thành phần dữ liệu có trong kiểu cấu trúc này. Một kiểu cấu trúc được khai báo theo mẫu sau: \n struct <tên kiểu> { \n  <danh sách biến>; //các thành phần \n }; \n Ví dụ: \n struct PHANSO { \n    int tu; \n    int mau; \n}; /* khi đó ta có thê sử dụng kiểu cấu trúc PHANSO như là một kiểu bình thường*/  PHANSO ps; "],
+            "compare": [""],
+            "__source__": ["https://viettuts.vn/lap-trinh-cpp/struct-trong-cpp"]
+        }
+    },
+    "mảng": {
+        "general": {
+            "define": ["Khi cần lưu trữ một dãy n phần tử dữ liệu chúng ta cần khai báo n biến tương ứng với n tên gọi khác nhau. Điều này sẽ rất khó khăn cho người lập trình để có thể nhớ và quản lý hết được tất cả các biến, đặc biệt khi n lớn. Khi đó, ta cần dùng đến mảng. \n Định nghĩa Mảng \n Mảng là một dãy các thành phần có cùng kiểu được sắp kề nhau liên tục trong bộ nhớ. Tất cả các thành phần đều có cùng tên là tên của mảng. Để phân biệt các thành phần với nhau, các thành phần sẽ được đánh số thứ tự từ 0 cho đến hết mảng."],
+            "apply": ["Cú pháp khởi tạo Mảng 1 chiều \n <tên kiểu> <tên mảng>[số thành phần] ; // không khởi tạo VD: float a[3]; \n <tên kiểu> <tên mảng>[số thành phần] = { dãy giá trị } ; // có khởi tạo VD: int a[2] = {1, 3} ,\n <tên kiểu> <tên mảng>[ ] = { dãy giá trị } ; // có khởi tạo VD: double Data[] = { 0,0,0,0,0 };"],
+            "compare": [""],
+            "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
+        }
+    },
+    "switch case": {
+        "general": {
+            "define":["Khi có quá nhiều lựa chọn dẫn đến nếu dùng cấu trúc if...else...if sẽ dài dòng và khó hiểu\n Khi sự so sánh chỉ là so sánh bằng, không phải so sánh thứ tự"],
+            "apply": ["Cú pháp:\nswitch(biểu_thức_nguyên){\n    case: trường_hợp_1;\n         các cậu lệnh 1;\n     break;\n    case: trường_hợp_2;\n         các cậu lệnh 2;\n     break;\n    default:\n         các cậu lệnh n;\n     break;\n}"],
+            "compare": [""],
+            "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
+        }
     }
 }
