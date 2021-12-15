@@ -124,10 +124,7 @@ class codebot:
         response = choice(rb_intent[self.context])
         knowledge = []
 
-        print("tokens",tokens)
-        print("intent",self.intent)
-        print("theory",theory_terms)
-        print("context",self.context)
+        # print("tokens",tokens)
 
         if len(theory_terms) < response.count('$obj'):
             self.intent = 'other'
@@ -146,7 +143,7 @@ class codebot:
                         knowledge.extend(self.kb[term][self.context][self.intent])
                         
                         if len(self.kb[term][self.context]['__source__']) > 0:
-                            knowledge.append("Nguồn:\n"+'\n'.join(self.kb[term][self.context]['__source__']))
+                            knowledge.append("\n\nNguồn: "+'\n'.join(self.kb[term][self.context]['__source__']) + "\n\n")
                     else:
                         for context in self.kb[term]:
                             if self.intent in self.kb[term][context]:
@@ -162,7 +159,7 @@ class codebot:
                         knowledge.extend(self.kb[term][self.context][self.intent])
                         
                         if "__source__" in self.kb[term][self.context] and len(self.kb[term][self.context]['__source__']) > 0:
-                            knowledge.append("Nguồn:\n"+'\n'.join(self.kb[term][self.context]['__source__']))
+                            knowledge.append("\n\nNguồn: "+'\n'.join(self.kb[term][self.context]['__source__']) + "\n\n")
                     else:
                         knowledge = []
                         break
@@ -171,8 +168,12 @@ class codebot:
                 self.intent = 'other'
                 response = choice(rb_intent['null'])
                 response = response.replace('$obj', tmp, 1)
-                    
-        
+
+        print("tokens",tokens)
+        print("intent",self.intent)
+        print("theory",theory_terms)
+        print("context",self.context)            
+        # print(knowledge)
         answer = [response]
         answer.extend(knowledge)
         
@@ -236,10 +237,11 @@ class codebot:
             final_answer = self.__get_low_conf_answer(intent['name'])
         elif self.intent in ('define', 'apply', 'compare'):
             final_answer = self.__get_theory_answer()
+            # print(final_answer)
         else:
             final_answer = self.__get_irrelevant_answer()
         
-        # print(intent, self.intent, context, self.context, self.low_conf_accept, sep='\n')
+        print(intent, self.intent, context, self.context, self.low_conf_accept, sep='\n')
 
         # Only allow 1 follow-up question, hence we need to reset context:
         if self.context != context['name']:
@@ -266,13 +268,10 @@ class codebot:
 from flask import Flask, render_template, request
 
 if __name__ == "__main__":
-    # try:
-        # Set terminal encoding to utf-8
     sys.stdin.reconfigure(encoding='utf-8')
     sys.stdout.reconfigure(encoding='utf-8')
 
-    bot_instance = codebot()
-    # print("[\"<strong>CodEbot</strong> xin chào bạn 😁<br>Bạn có cần mình giúp gì không 😙😙\"]")
+    bot_instance = codebot() 
     
     app = Flask(__name__, template_folder='../../template')
     app.static_folder = '../../static'
@@ -282,17 +281,8 @@ if __name__ == "__main__":
     @app.route("/get")
     def get_bot_response():
         userText = request.args.get('msg')
+        # print("final: ", bot_instance.send_replies(userText))
         return bot_instance.send_replies(userText)
     if __name__ == "__main__":
         app.run()
-        
-    # except Exception as ex:
-    #     print("An error has occured! Here is the error details:")
-    #     try:
-    #         print(bot_instance.intent, bot_instance.context)
-    #         traceback.print_tb(ex.__traceback__, file=sys.stdout)
-    #         print(ex)
-    #     except Exception as another_ex:
-    #         print("Another error has occured::", another_ex)
-    # finally:
-    #     pass
+    

@@ -7,9 +7,8 @@
     ],
     "credit_info": [
         [
-            "CodEbot là một hệ thống chatbot sử dụng ngôn ngữ Tiếng Việt để giải đáp thắc mắc trong lập trình C++ và Python 3 cơ bản.", 
-            "CodEbot được phát triển bởi nhóm tác giả là Vương Lê Minh Nguyên và Lương Công Tâm dưới sự hướng dẫn của Tiến sĩ Nguyễn Viết Hưng.", 
-            "Vào thời điểm xây dựng CodEbot, các tác giả đang là sinh viên năm 3 ngành Khoa học Máy tính của trường Đại học Sư Phạm TP.HCM."
+            "Đây là một hệ thống sử dụng ngôn ngữ Tiếng Việt để tra cứu kiến thức trong lập trình C++", 
+            "Hệ thống được phát triển bởi nhóm sinh viên Lầm Hoàng Khánh, Trần Gia Phát, Lâm Phát Tài"
         ]
     ],
     "other": [
@@ -29,9 +28,6 @@
         ],
         "cpp": [
             "$opp có thắc mắc gì về C++ ạ?"
-        ],
-        "py": [
-            "$opp có thắc mắc gì về Python ạ?"
         ]
     },
     "tip": {
@@ -39,9 +35,6 @@
             ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
         ],
         "cpp": [
-            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
-        ],
-        "py": [
             ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
         ]
     },
@@ -54,20 +47,14 @@
         ],
         "cpp": [
             ["The C++ Programming Language by Bjarne Stroustrup", "Programming: Principles and Practice Using C++ by Bjarne Stroustrup", "A Tour of C++ by Bjarne Stroustrup"]
-        ],
-        "py": [
-            ["Python Cookbook: Recipes for Mastering Python 3 by Brian K. Jones and David M. Beazley", "Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code by Zed Shaw"]
         ]
     },
     "define": {
         "general": [
-            "Sau đây là định nghĩa của $obj mà bạn đang tìm"
+            "Đây là định nghĩa của $obj mà bạn đang tìm:\n"
         ],
         "cpp": [
             "Trong ngôn ngữ C++, sau đây là định nghĩa của $obj mà bạn đang tìm"
-        ],
-        "py": [
-            "Trong ngôn ngữ Python, sau đây là định nghĩa của $obj mà bạn đang tìm"
         ],
         "null": [
             "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
@@ -75,13 +62,10 @@
     },
     "apply": {
         "general": [
-            "Sau đây là ứng dụng của $obj mà bạn đang tìm"
+            "Đây là ứng dụng của $obj mà bạn đang tìm:\n"
         ],
         "cpp": [
             "Trong ngôn ngữ C++, sau đây là ứng dụng của $obj mà bạn đang tìm"
-        ],
-        "py": [
-            "Trong ngôn ngữ Python, sau đây là ứng dụng của $obj mà bạn đang tìm"
         ],
         "null": [
             "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
@@ -89,13 +73,10 @@
     },
     "compare": {
         "general": [
-            "Sau đây là sự so sánh giữa $obj và $obj."
+            "Đây là sự so sánh giữa $obj và $obj:\n"
         ],
         "cpp": [
             "Trong C++, sau đây là sự so sánh giữa $obj và $obj."
-        ],
-        "py": [
-            "Trong Python, sau đây là sự so sánh giữa $obj và $obj."
         ],
         "null": [
             "Khái niệm bạn đang thắc mắc không nằm trong tầm hiểu biết của $self ạ! $recommend"
@@ -112,14 +93,14 @@
         "apply": "Có phải $opp đang cần $self trả lời câu hỏi ứng dụng không?"
     },
     "$self": [
-        "CodEbot"
+        "mình"
     ],
     "$opp": [
         "bạn"
     ],
     "$topic": [
-        "lập trình C++ hay Python 3 cơ bản",
-        "lập trình cơ bản với C++ hoặc Python 3"
+        "lập trình C++ cơ bản",
+        "lập trình cơ bản với C++"
     ],
     "$recommend": [
         "Hãy đặt một câu hỏi khác liên quan đến $topic ạ!",

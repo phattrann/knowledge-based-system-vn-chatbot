@@ -235,40 +235,6 @@ greeting,general,hi
 greeting,general,hi codebot
 greeting,general,xin chào
 greeting,general,xin chào codebot
-help,cpp,C++
-help,cpp,C++ đang làm khó mình!
-help,cpp,C++ khó quá cậu ạ
-help,cpp,C++ nhiều cái mới lạ quá
-help,cpp,"Chào codebot, mình đang đau đầu vì C++ đây"
-help,cpp,cho mình hỏi đôi chút về C++
-help,cpp,Codebot ơi C++ đang làm khó mình!
-help,cpp,Codebot ơi C++ khó quá cậu ạ
-help,cpp,"codebot ơi, mình có câu hỏi về C++"
-help,cpp,"Codebot, C++ nhiều cái mới lạ quá"
-help,cpp,đang đau đầu vì C++ đây
-help,cpp,"hello, mình có thắc mắc về C++"
-help,cpp,mình có câu hỏi về C++
-help,cpp,mình có thắc mắc về C++
-help,cpp,Tớ cần giúp đỡ về C++
-help,cpp,"Xin chào codebot, cho mình hỏi đôi chút về C++"
-help,cpp,"xin chào, Tớ cần giúp đỡ về C++"
-help,general,bạn có thể giúp tôi chứ?
-help,general,"chào codebot, giúp tôi với"
-help,general,codebot hãy giúp tôi
-help,general,"codebot, hãy giúp tôi với"
-help,general,giúp tôi với
-help,general,"Hi codebot, tớ có thắc mắc"
-help,general,"Hi, tớ cần sự trợ giúp"
-help,general,mình có thắc mắc không biết hỏi ai
-help,general,tớ cần sự trợ giúp
-help,general,tớ có thắc mắc
-help,general,tôi cần giúp đỡ
-help,general,tôi có câu hỏi
-help,general,"tôi có thắc mắc cần được giải đáp, giúp tôi với"
-help,general,trợ giúp
-help,general,trợ giúp
-help,general,"xin chào codebot, bạn có thể giúp tôi chứ?"
-help,general,"Xin chào, tôi cần giúp đỡ"
 other,general,10
 other,general,35
 other,general,321
@@ -313,41 +279,3 @@ other,general,trong trường hợp nào thì mình nên nghỉ học?
 other,general,vì sao hổ dữ không ăn thịt con?
 other,general,việc học là việc quan trọng
 other,general,vớ va vớ vẩn
-references,cpp,chia sẻ cho mình sách học lập trình C++ đi ạ
-references,cpp,cho tớ vài tựa sách lập trình C++
-references,cpp,cho xin ebook lập trình C++
-references,cpp,có sách lập trình C++ không ạ?
-references,cpp,có tài liệu C++ không?
-references,cpp,ebook C++
-references,cpp,mình cần vài cuốn sách dạy C++ gối đầu giường
-references,cpp,sách dạy C++ có không?
-references,cpp,tài liệu lập trình C++
-references,cpp,tớ cần một vài cuốn dạy lập trình C++
-references,general,các nhãn sách học lập trình
-references,general,cho mình xin tài liệu học lập trình
-references,general,cho xin vài đầu sách lập trình
-references,general,có tài liệu học lập trình không cu?
-references,general,ebook học lập trình
-references,general,mình cần tài liệu học lập trình
-references,general,một số cuốn sách học lập trình
-references,general,một số tài liệu học lập trình tốt nhất
-references,general,sách học lập trình
-references,general,sách học lập trình cơ bản
-references,general,tài liệu học lập trình
-references,general,tài liệu lập trình
-references,general,tôi có thể tìm tài liệu học lập trình ở đâu?
-references,general,cho xin tài liệu
-references,general,xin tài liệu
-references,general,xin tài liệu lập trình đi
-tip,cpp,chia sẻ chút mẹo vặt về C++ đi ạ
-tip,cpp,có mẹo gì hay về C++ không?
-tip,cpp,tip C++
-tip,cpp,tip hay C++
-tip,cpp,xin mẹo lập trình C++
-tip,cpp,xin tip lập trình C++
-tip,general,mẹo hay lập trình
-tip,general,mẹo lập trình
-tip,general,programming tip
-tip,general,tip hay trong lập trình
-tip,general,tip lập trình
-tip,general,xin tip lập trình

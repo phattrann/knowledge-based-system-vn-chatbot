@@ -1,5 +1,5 @@
 {
-    "c++": {
+    "ngôn ngữ c++": {
         "general": {
             "define": ["C++ là một loại ngôn ngữ lập trình bậc. Đây là ngôn ngữ lập trình đa năng được tạo ra bởi Bjarne Stroustrup như một phần mở rộng của ngôn ngữ lập trình C, hoặc \"C với các Class\". Ngôn ngữ đã được mở rộng đáng kể theo thời gian và C ++ hiện đại có các tính năng: lập trình tổng quát, lập trình hướng đối tượng, lập trình thủ tục, ngôn ngữ đa mẫu hình tự do có kiểu tĩnh, dữ liệu trừu tượng, và lập trình đa hình, ngoài ra còn có thêm các tính năng, công cụ để thao tác với bộ nhớ cấp thấp. Từ thập niên 1990, C++ đã trở thành một trong những ngôn ngữ thương mại ưa thích và phổ biến của lập trình viên."],
             "apply": ["C++ được thiết kế hướng tới lập trình hệ thống và phần mềm nhúng, bao gồm cả hệ thống có tài nguyên hạn chế và tài nguyên khổng lồ, với ưu điểm là hiệu suất, hiệu quả và tính linh hoạt cao. C ++ có thể tìm thấy ở mọi nơi, với những điểm mạnh là cơ sở hạ tầng phần mềm và các ứng dụng bị hạn chế tài nguyên, bao gồm: phần mềm ứng dụng máy tính cá nhân, các hệ thống máy chủ (ví dụ: thương mại điện tử, cỗ máy tìm kiếm trên web hoặc máy chủ SQL) và các ứng dụng ưu tiên về hiệu suất (ví dụ: tổng đài thông tin liên lạc hoặc thiết bị thăm dò không gian)."],
@@ -13,9 +13,13 @@
             "apply": ["Người ta thay các đoạn trình giống nhau bằng một chương trình con (subroutine), làm cho mã chương trình ngắn hơn, sáng sủa và dễ bảo dưỡng. Đưa các subroutine đã kiểm tra vào thư viện (library) ở dạng văn bản trình hoặc dạng mã, để khi lập trình mới thì chỉ cần liên kết tới thư viện đó. Những chương trình lớn được thiết kế dạng cấu trúc tốt có thể trao cho các nhóm và người lập trình khác nhau lập trình, đôi khi có thể thuê người làm thêm viết các subroutine không quá phức tạp."],
             "compare": ["Hàm là một đoạn chương trình con được đóng gói và được gọi ra khi cần, tập hợp các dòng lệnh để thực hiện một chức năng gì đó, giúp mã chương trình ngắn gọn, sáng sủa."],
             "__source__": ["https://vi.wikipedia.org/wiki/Ch%C6%B0%C6%A1ng_tr%C3%ACnh_con"]
-        },
-        "cpp": {
-            "define": ["Cách sử dụng hàm trong C++: abcxyz"],
+        }
+    },
+    "nhập xuất": {
+        "general": {
+            "define": ["Nhập xuất tiêu chuẩn:\ncout: xuất dữ liệu ra màn hình\ncin: nhập giá trị vào biến"],
+            "apply": ["Ví dụ:\ncout<<a; (xuất giá trị của a ra màn hình)\ncin>>b; (máy tính sẽ yêu cầu người dùng nhập một giá trị từ bàn phím, sau khi nhập từ bàn phím 1 giá trị và bấm enter, thì b sẽ mang giá trị mà người đó vừa nhập)"],
+            "compare": ["Nhập xuất tiêu chuẩn:\ncout: xuất dữ liệu ra màn hình\ncin: nhập giá trị vào biến"],
             "__source__": []
         }
     },
@@ -24,10 +28,6 @@
             "define": ["Chuỗi là đối tượng đại diện cho chuỗi các ký tự (mảng các ký tự)."],
             "apply": ["strcpy(s, t); // Hàm sẽ sao chép toàn bộ nội dung của chuỗi t (kể cả kí tự kết thúc chuỗi) vào cho chuỗi s. \n Lưu ý: Để sử dụng hàm này cần đảm bảo độ dài của mảng s ít nhất cũng bằng độ dài của mảng t."],
             "compare": ["Chuỗi là đối tượng đại diện cho chuỗi các ký tự (mảng các ký tự)."],
-            "__source__": []
-        },
-        "cpp": {
-            "define": ["Cách sử dụng string trong C++: abcxyz"],
             "__source__": []
         }
     },
@@ -43,7 +43,7 @@
         "general": {
             "define": ["Trong lập trình máy tính, chúng tôi sử dụng câu lệnh if để chạy mã khối chỉ khi một điều kiện nhất định được đáp ứng."],
             "apply": ["Cú pháp: \n if(biểu thức logic){//khối lệnh}"],
-            "compare": ["Trong lập trình máy tính, chúng tôi sử dụng câu lệnh if để chạy mã khối chỉ khi một điều kiện nhất định được đáp ứng."],
+            "compare": ["Câu lệnh if để chạy mã khối chỉ khi một điều kiện nhất định được đáp ứng."],
             "__source__": ["https://cafedev.vn/tu-hoc-c-cau-lenh-if-trong-c/"]
         }
     },
@@ -63,11 +63,19 @@
             "__source__": ["Giáo trình C++"]
         }
     },
+    "kiểu dữ liệu": {
+        "general": {
+            "define": ["int, kiểu số nguyên, ví dụ: -2\nunsigned int, kiểu số nguyên không âm, ví dụ: 5\nlong, kiểu số nguyên dài, ví dụ: 3445\nfloat, số thực, ví dụ: 4.5\ndouble, số thực, ví dụ: 7.8\nchar, ký tự, ví dụ: 'A', '+'\nunsigned char, ký tự, ví dụ: 'B', '-'\nbool, logic, ví dụ: True\nKiểu ký tự cũng có thể là một dạng của kiểu số nguyên\nKiểu bool là kiểu thể hiện giá trị đúng sai\n&& là AND (và)\n|| là OR (hoặc)\n! là NOT (phủ định)"],
+            "apply": ["Chuyển đổi kiểu (ép kiểu): giá trị của phép ép kiểu sẽ chuyển giá trị sang kiểu dữ liệu mới, nhưng kiểu dữ liệu của những biến tham gia vào phép ép kiểu vẫn không bị thay đổi kiểu dữ liệu.\nCú pháp: (tên_kiểu_mới) tên_biến\nVí dụ: \nfloat i = 2.34;\nint j = int(i)"],
+            "compare": [""],
+            "__source__": ["Giáo trình C++"]
+        }
+    },
     "toán tử": {
         "general": {
-            "define": ["Một toán tử là một biểu tượng, mà nó cho compiler thực hiện các thao tác toán học và logic cụ thể. C++ cung cấp nhiều toán tử có sẵn, đó là:\n +, cộng, a + b \n -, trừ, a - b \n *, nhân, a * b \n /, chia, a / b \n %, chia lấy phần dư, a % b \n >, so sánh lớn, a > b \n <, so sánh nhỏ, a < b \n <=, nhỏ hơn hoặc bằng, a <= b \n >=, lớn hơn hoặc bằng, a >= b \n !=, so sánh khác, a != b \n ==, so sánh bằng, a == b \n =, gán, a = b \n +=, viết tắt của lệnh a = a + b, a += b \n -=, viết tắt của lệnh a = a - b, a -= b \n *=, viết tắt của lệnh a = a * b, a *= b \n /=, viết tắt của lệnh a = a / b, a /= b \n %=, viết tắt của lệnh a = a % b, a %= b \n ++, viết tắt của lệnh a = a + 1, a++ (++a) \n --, viết tắt của lệnh a = a - 1, a-- (--a)"],
+            "define": ["Một toán tử là một biểu tượng, cho compiler thực hiện các thao tác toán học và logic cụ thể. C++ cung cấp nhiều toán tử có sẵn, đó là:\n +, cộng, a + b \n -, trừ, a - b \n *, nhân, a * b \n /, chia, a / b \n %, chia lấy phần dư, a % b \n >, so sánh lớn, a > b \n <, so sánh nhỏ, a < b \n <=, nhỏ hơn hoặc bằng, a <= b \n >=, lớn hơn hoặc bằng, a >= b \n !=, so sánh khác, a != b \n ==, so sánh bằng, a == b \n =, gán, a = b \n +=, viết tắt của lệnh a = a + b, a += b \n -=, viết tắt của lệnh a = a - b, a -= b \n *=, viết tắt của lệnh a = a * b, a *= b \n /=, viết tắt của lệnh a = a / b, a /= b \n %=, viết tắt của lệnh a = a % b, a %= b \n ++, viết tắt của lệnh a = a + 1, a++ (++a) \n --, viết tắt của lệnh a = a - 1, a-- (--a)"],
             "apply": ["int a = 5, b = 10; \n int tong = 0; \n tong = a+b; \n hieu = a-b; \n tich = a*b; \n chialaydu = a%b;"],
-            "compare": [""],
+            "compare": ["toán tử là một biểu tượng thực hiện các thao tác toán học và logic cụ thể"],
             "__source__": ["Giáo trình C++"]
         }
     },
@@ -75,15 +83,15 @@
         "general": {
             "define": ["Trong ngôn ngữ lập trình C++, các lớp và cấu trúc (struct) là các bản thiết kế được sử dụng để tạo ra thể hiện của một lớp.\n Struct trong C++ là một tập hợp các loại dữ liệu khác nhau. Nó tương tự như lớp chứa các loại dữ liệu khác nhau."],
             "apply": ["Để khai báo ra một kiểu cấu trúc, cần phải khai báo tên của kiểu (là một tên gọi tự đặt), tên cùng với các thành phần dữ liệu có trong kiểu cấu trúc này. Một kiểu cấu trúc được khai báo theo mẫu sau: \n struct <tên kiểu> { \n  <danh sách biến>; //các thành phần \n }; \n Ví dụ: \n struct PHANSO { \n    int tu; \n    int mau; \n}; /* khi đó ta có thê sử dụng kiểu cấu trúc PHANSO như là một kiểu bình thường*/  PHANSO ps; "],
-            "compare": [""],
+            "compare": ["Struct trong C++ là một tập hợp các loại dữ liệu khác nhau. Nó tương tự như lớp chứa các loại dữ liệu khác nhau."],
             "__source__": ["https://viettuts.vn/lap-trinh-cpp/struct-trong-cpp"]
         }
     },
     "mảng": {
         "general": {
             "define": ["Khi cần lưu trữ một dãy n phần tử dữ liệu chúng ta cần khai báo n biến tương ứng với n tên gọi khác nhau. Điều này sẽ rất khó khăn cho người lập trình để có thể nhớ và quản lý hết được tất cả các biến, đặc biệt khi n lớn. Khi đó, ta cần dùng đến mảng. \n Định nghĩa Mảng \n Mảng là một dãy các thành phần có cùng kiểu được sắp kề nhau liên tục trong bộ nhớ. Tất cả các thành phần đều có cùng tên là tên của mảng. Để phân biệt các thành phần với nhau, các thành phần sẽ được đánh số thứ tự từ 0 cho đến hết mảng."],
-            "apply": ["Cú pháp khởi tạo Mảng 1 chiều \n <tên kiểu> <tên mảng>[số thành phần] ; // không khởi tạo VD: float a[3]; \n <tên kiểu> <tên mảng>[số thành phần] = { dãy giá trị } ; // có khởi tạo VD: int a[2] = {1, 3} ,\n <tên kiểu> <tên mảng>[ ] = { dãy giá trị } ; // có khởi tạo VD: double Data[] = { 0,0,0,0,0 };"],
-            "compare": [""],
+            "apply": ["Cú pháp khởi tạo Mảng 1 chiều \n <tên kiểu> <tên mảng>[số thành phần] ; // không khởi tạo VD: float a[3]; \n <tên kiểu> <tên mảng>[số thành phần] = { dãy giá trị } ; // có khởi tạo VD: int a[2] = {1, 3} ,\n <tên kiểu> <tên mảng>[ ] = { dãy giá trị } ; // có khởi tạo VD: double Data[] = { 0,0,0,0,0 };\nCú pháp khởi tại Mảng 2 chiều\n<tên kiểu> <tên mảng>[số dòng][số cột] ; // không khởi tạo VD: int a[3][4];"],
+            "compare": ["Khi cần lưu trữ một dãy n phần tử dữ liệu chúng ta cần khai báo n biến tương ứng với n tên gọi khác nhau. Điều này sẽ rất khó khăn cho người lập trình để có thể nhớ và quản lý hết được tất cả các biến, đặc biệt khi n lớn. Khi đó, ta cần dùng đến mảng."],
             "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
         }
     },
@@ -91,7 +99,23 @@
         "general": {
             "define":["Khi có quá nhiều lựa chọn dẫn đến nếu dùng cấu trúc if...else...if sẽ dài dòng và khó hiểu\n Khi sự so sánh chỉ là so sánh bằng, không phải so sánh thứ tự"],
             "apply": ["Cú pháp:\nswitch(biểu_thức_nguyên){\n    case: trường_hợp_1;\n         các cậu lệnh 1;\n     break;\n    case: trường_hợp_2;\n         các cậu lệnh 2;\n     break;\n    default:\n         các cậu lệnh n;\n     break;\n}"],
-            "compare": [""],
+            "compare": ["Khi có quá nhiều lựa chọn dẫn đến nếu dùng cấu trúc if...else...if sẽ dài dòng và khó hiểu\n Khi sự so sánh chỉ là so sánh bằng, không phải so sánh thứ tự"],
+            "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
+        }
+    },
+    "for": {
+        "general": {
+            "define":["Vòng lặp For trong C++ là một cấu trúc điểu khiển lặp được sử dụng để thực thi số lần lặp cụ thể."],
+            "apply": ["Cú pháp vòng lặp for\nfor (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  \n    // Khối lệnh được thực thi\n}\n\nVí dụ vòng lặp for\nfor (int a = 10; a < 20; a++) {\n    cout << 'Gia tri cua a: ' << a << endl;\n}"],
+            "compare": ["Vòng lặp For trong C++ là một cấu trúc điểu khiển lặp được sử dụng để thực thi số lần lặp cụ thể."],
+            "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
+        }
+    },
+    "while": {
+        "general": {
+            "define":["Vòng lặp while trong C++ được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này."],
+            "apply": ["Cú pháp vòng lặp while\n\nwhile(condition) {\n    // Khối lệnh được lặp lại cho đến khi condition=False\n}\ntrong đó, condition có thể là bất kỳ biểu thức nào. Khối lệnh trong vòng lặp while được thực thi trong khi \ncondition là true. Khi condition là false thì điều khiển chương trình sẽ chuyển đến dòng ngay sau vòng lặp.\nỞ đây, điểm mấu chốt cần lưu ý là vòng lặp while có thể không thực thi được. Khi điều kiện là false, khối lệnh \nbên trong vòng lặp sẽ bị bỏ qua và câu lệnh đầu tiên sau vòng lặp while sẽ được thực thi\n\nVí dụ vòng lặp while\nint a = 10;\nwhile( a < 20 ) {\n   cout << 'Gia tri cua a: ' << a << endl;\n   a++;\n}"],
+            "compare": ["Vòng lặp while trong C++ được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này."],
             "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
         }
     }
