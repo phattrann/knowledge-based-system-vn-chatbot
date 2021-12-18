@@ -104,10 +104,10 @@
         }
     },
     "for": {
-        "general": {
+        "c++": {
             "define":["Vòng lặp For trong C++ là một cấu trúc điểu khiển lặp được sử dụng để thực thi số lần lặp cụ thể."],
             "apply": ["Cú pháp vòng lặp for\nfor (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  \n    // Khối lệnh được thực thi\n}\n\nVí dụ vòng lặp for\nfor (int a = 10; a < 20; a++) {\n    cout << 'Gia tri cua a: ' << a << endl;\n}"],
-            "compare": ["Vòng lặp For trong C++ là một cấu trúc điểu khiển lặp được sử dụng để thực thi số lần lặp cụ thể."],
+            "compare": ["Vòng lặp For trong C++ có cú pháp phức tạp, nhưng ngắn gọn hơn các vòng lặp while hay do-while khi sử dụng. Vòng lặp for hoàn toàn có thể thay thế vòng lặp while. Vòng lặp for thường được sử dụng cho các trường hợp biết trước số lần lặp lại khối công việc."],
             "__source__": ["Bài giảng NGÔN NGỮ LẬP TRÌNH C/C++ Phạm Hồng Thái"]
         }
     },
