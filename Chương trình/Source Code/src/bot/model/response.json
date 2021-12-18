@@ -7,8 +7,7 @@
     ],
     "credit_info": [
         [
-            "Đây là một hệ thống sử dụng ngôn ngữ Tiếng Việt để tra cứu kiến thức trong lập trình C++", 
-            "Hệ thống được phát triển bởi nhóm sinh viên Lầm Hoàng Khánh, Trần Gia Phát, Lâm Phát Tài"
+            "Đây là một hệ thống sử dụng ngôn ngữ Tiếng Việt để tra cứu kiến thức trong lập trình C++"
         ]
     ],
     "other": [
@@ -22,33 +21,6 @@
     "disagree": [
         "Xin lỗi $opp. $recommend"
     ],
-    "help": {
-        "general": [
-            "Không biết $self có thể giúp gì được cho $opp?"
-        ],
-        "cpp": [
-            "$opp có thắc mắc gì về C++ ạ?"
-        ]
-    },
-    "tip": {
-        "general": [
-            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
-        ],
-        "cpp": [
-            ["$self có câu này tặng bạn: Có công mài sắt có ngày nên kim"]
-        ]
-    },
-    "references": {
-        "general": [
-            ["Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein", 
-             "Code Complete: A Practical Handbook of Software Construction by Steve McConnell",
-             "Code Simplicity: The Fundamentals of Software by Max Kanat-Alexander",
-             "Clean Code: A Handbook of AGILE Software Craftmanship by Robert C. Martin"]
-        ],
-        "cpp": [
-            ["The C++ Programming Language by Bjarne Stroustrup", "Programming: Principles and Practice Using C++ by Bjarne Stroustrup", "A Tour of C++ by Bjarne Stroustrup"]
-        ]
-    },
     "define": {
         "general": [
             "Đây là định nghĩa của $obj mà bạn đang tìm:\n"
@@ -101,10 +73,5 @@
     "$topic": [
         "lập trình C++ cơ bản",
         "lập trình cơ bản với C++"
-    ],
-    "$recommend": [
-        "Hãy đặt một câu hỏi khác liên quan đến $topic ạ!",
-        "Hãy đặt một câu hỏi khác. Nhớ là liên quan đến $topic nhé!",
-        "Vui lòng đặt một câu hỏi khác liên quan đến $topic đi $opp."
     ]
 }
