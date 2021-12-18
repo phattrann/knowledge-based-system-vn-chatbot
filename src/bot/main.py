@@ -159,7 +159,7 @@ class codebot:
                         knowledge.extend(self.kb[term][self.context][self.intent])
                         
                         if "__source__" in self.kb[term][self.context] and len(self.kb[term][self.context]['__source__']) > 0:
-                            knowledge.append("\n\nNguồn: "+'\n'.join(self.kb[term][self.context]['__source__']) + "\n\n")
+                            knowledge.append("\n\nNguồn: "+'\n'.join(self.kb[term][self.context]['__source__'])+ "\n\n")
                     else:
                         knowledge = []
                         break
